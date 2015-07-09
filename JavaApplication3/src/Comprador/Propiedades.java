@@ -158,45 +158,12 @@ Consultas frm = new Consultas();
         initComponents();
         this.setSize(875, 710);        
       
-        //Condicion que sirve para habilitar o desabilitar opciones de usuarios.
-        try{
-            //Condicion para el cargo de Comprador.
-            if(Consultas.tipoU == 2){
-
-        } //Condicion para el cargo del vendedor
-        else if(Consultas.tipoU == 1){
-            btnguardar.setVisible(false);
-            btneliminar.setVisible(false);
-            btnnuevo.setVisible(false);
-            btnconsultar.setVisible(false);
-            txtdimensiones.disable();
-        txtubicacion.disable();
-        txtdescripcion.disable();
-        txtprecio.disable();
-        txtprima.disable();
-        agregarimg.setVisible(false);
-        btnmaxi.setText("Visualizar la Galeria"); 
-        }
-        else if(Consultas.tipoU == 0){
-            btnguardar.setVisible(false);
-            btneliminar.setVisible(false);
-            btnnuevo.setVisible(false);
-            btnconsultar.setVisible(false);
-            txtdimensiones.disable();
-        txtubicacion.disable();
-        txtdescripcion.disable();
-        txtprecio.disable();
-        txtprima.disable();  
-        }
-        }
-        catch(Exception e){
-            
-        }
+        
         Consultas frm = new Consultas();
         frm.combo11();
         Snumeros4(txtprecio1);
         Snumeros4(txtprecio2); 
-        btnconsultar.setVisible(false);  
+        
         btneliminar.setVisible(false);
         btnmini.setVisible(false); 
         al = new ActionListener(){
